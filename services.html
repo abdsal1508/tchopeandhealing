@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Wellness Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header (Same across all pages) -->
+    <header class="border-bottom sticky-top bg-white">
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2"
+                        style="width: 48px; height: 48px;">
+                        <img src="assets/images/placeholder.svg" alt="Wellness Center Logo" width="48" height="48">
+                    </div>
+                    <div class="fw-bold text-primary">
+                        <div class="fs-4">WELLNESS CENTER</div>
+                        <div class="small text-uppercase">MENTAL HEALTH SERVICES</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">OUR TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">RESOURCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                                REQUEST APPOINTMENT
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold text-primary mb-3">Our Services</h1>
+                    <p class="fs-5 text-muted">
+                        We offer a comprehensive range of mental health services designed to support your unique needs
+                        and goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <!-- Individual Therapy -->
+            <div id="individual-therapy" class="row align-items-center mb-5 pb-5 border-bottom">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative rounded overflow-hidden" style="height: 400px;">
+                        <img src="assets/images/placeholder.svg" alt="Individual therapy session"
+                            class="w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Individual Therapy</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Our one-on-one therapy sessions provide a safe, confidential space to address your specific
+                        challenges and work toward your personal goals.
+                    </p>
+                    <p class="fs-5 text-muted mb-4">
+                        Our therapists are trained in various evidence-based approaches, including Cognitive Behavioral
+                        Therapy, Dialectical Behavior Therapy, and Psychodynamic Therapy.
+                    </p>
+                    <h3 class="fs-5 fw-bold text-primary mb-3">What to Expect:</h3>
+                    <ul class="text-muted mb-4">
+                        <li class="mb-2">Initial assessment to understand your needs and goals</li>
+                        <li class="mb-2">Collaborative development of a personalized treatment plan</li>
+                        <li class="mb-2">Regular sessions focused on building skills and making progress</li>
+                        <li class="mb-2">Ongoing evaluation and adjustment of your treatment approach</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        Request Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Group Therapy -->
+            <div id="group-therapy" class="row align-items-center mb-5 pb-5 border-bottom">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="position-relative rounded overflow-hidden" style="height: 400px;">
+                        <img src="assets/images/placeholder.svg" alt="Group therapy session"
+                            class="w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Group Therapy</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Our group therapy sessions provide a supportive community where you can connect with others
+                        facing similar challenges, share experiences, and learn from one another.
+                    </p>
+                    <p class="fs-5 text-muted mb-4">
+                        Groups are facilitated by experienced therapists and focus on specific topics or populations,
+                        such as anxiety management, depression support, or trauma recovery.
+                    </p>
+                    <h3 class="fs-5 fw-bold text-primary mb-3">Current Groups:</h3>
+                    <ul class="text-muted mb-4">
+                        <li class="mb-2">Anxiety Management (Mondays, 6-7:30 PM)</li>
+                        <li class="mb-2">Depression Support (Wednesdays, 5-6:30 PM)</li>
+                        <li class="mb-2">Trauma Recovery (Thursdays, 6-7:30 PM)</li>
+                        <li class="mb-2">Mindfulness Practice (Tuesdays, 12-1 PM)</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        Request Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medication Management -->
+            <div id="medication" class="row align-items-center mb-5 pb-5 border-bottom">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative rounded overflow-hidden" style="height: 400px;">
+                        <img src="assets/images/placeholder.svg" alt="Medication management"
+                            class="w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Medication Management</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Our psychiatric providers offer expert medication management services to help address symptoms
+                        of mental health conditions as part of a comprehensive treatment approach.
+                    </p>
+                    <p class="fs-5 text-muted mb-4">
+                        We believe in a collaborative approach to medication, working closely with you to find the right
+                        treatment while minimizing side effects and maximizing benefits.
+                    </p>
+                    <h3 class="fs-5 fw-bold text-primary mb-3">Our Approach:</h3>
+                    <ul class="text-muted mb-4">
+                        <li class="mb-2">Thorough evaluation of your symptoms and medical history</li>
+                        <li class="mb-2">Education about medication options, benefits, and potential side effects</li>
+                        <li class="mb-2">Regular follow-up appointments to monitor progress and adjust as needed</li>
+                        <li class="mb-2">Coordination with your therapy team for integrated care</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        Request Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Community Integration -->
+            <div id="community" class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="position-relative rounded overflow-hidden" style="height: 400px;">
+                        <img src="assets/images/placeholder.svg" alt="Community integration"
+                            class="w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold text-primary mb-4">Community Integration</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Our community integration services help individuals build meaningful connections and develop the
+                        skills needed to thrive in their daily lives.
+                    </p>
+                    <p class="fs-5 text-muted mb-4">
+                        We provide support with housing, employment, education, and social connections to help you
+                        achieve greater independence and well-being.
+                    </p>
+                    <h3 class="fs-5 fw-bold text-primary mb-3">Services Include:</h3>
+                    <ul class="text-muted mb-4">
+                        <li class="mb-2">Housing assistance and independent living skills</li>
+                        <li class="mb-2">Employment support and vocational training</li>
+                        <li class="mb-2">Educational guidance and resources</li>
+                        <li class="mb-2">Social skills development and community connection</li>
+                    </ul>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        Request Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Programs -->
+    <section class="py-5 bg-primary-light">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold text-primary mb-5">Specialized Programs</h2>
+            <div class="row g-4">
+                <!-- Program 1 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="position-relative" style="height: 200px;">
+                            <img src="assets/images/placeholder.svg" alt="Trauma Recovery Program"
+                                class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="fs-4 fw-bold text-primary mb-3">Trauma Recovery Program</h3>
+                            <p class="text-muted mb-4">
+                                A comprehensive approach to healing from trauma using evidence-based therapies and
+                                holistic support.
+                            </p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="position-relative" style="height: 200px;">
+                            <img src="assets/images/placeholder.svg" alt="Mindfulness & Stress Reduction"
+                                class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="fs-4 fw-bold text-primary mb-3">Mindfulness & Stress Reduction</h3>
+                            <p class="text-muted mb-4">
+                                Learn practical techniques to manage stress, reduce anxiety, and cultivate greater
+                                awareness and peace.
+                            </p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="position-relative" style="height: 200px;">
+                            <img src="assets/images/placeholder.svg" alt="Family Support Services"
+                                class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="fs-4 fw-bold text-primary mb-3">Family Support Services</h3>
+                            <p class="text-muted mb-4">
+                                Resources and guidance for families supporting loved ones with mental health challenges.
+                            </p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-center">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-primary mb-4">Ready to Get Started?</h2>
+            <p class="fs-5 text-muted mb-5 mx-auto" style="max-width: 700px;">
+                Take the first step toward better mental health today. Our team is here to support you on your journey
+                to wellness.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                    Request Appointment
+                </button>
+                <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same across all pages) -->
+    <footer class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Column 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="d-flex align-items-center mb-4 text-decoration-none">
+                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2"
+                            style="width: 40px; height: 40px;">
+                            <img src="assets/images/placeholder.svg" alt="Wellness Center Logo" width="40" height="40">
+                        </div>
+                        <div class="fw-bold text-white">
+                            <div>WELLNESS CENTER</div>
+                            <div class="small text-purple-400">MENTAL HEALTH SERVICES</div>
+                        </div>
+                    </a>
+                    <p class="mb-4">
+                        Providing compassionate mental health care to help you thrive in your daily life.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="staff.html">Our Team</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Services</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#individual-therapy">Individual Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#group-therapy">Group Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#cbt">Cognitive Behavioral Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#trauma">Trauma-Informed Care</a></li>
+                        <li class="mb-2"><a href="services.html#mindfulness">Mindfulness Training</a></li>
+                        <li class="mb-2"><a href="services.html#community">Community Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Contact Us</h3>
+                    <address class="text-muted">
+                        <p class="mb-2">123 Wellness Avenue</p>
+                        <p class="mb-4">Minneapolis, MN 55401</p>
+                        <p class="mb-2">
+                            <span class="fw-semibold">Phone:</span> (612) 555-1234
+                        </p>
+                        <p class="mb-4">
+                            <span class="fw-semibold">Email:</span> info@wellnesscenter.com
+                        </p>
+                        <p class="mb-2">
+                            <span class="fw-semibold">Hours:</span>
+                        </p>
+                        <p class="mb-1">Monday - Friday: 8am - 7pm</p>
+                        <p>Saturday: 9am - 2pm</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
+                <p>&copy; 2025 Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal (Same across all pages) -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schedule an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Fill out the form below to request an appointment with one of our
+                        specialists.</p>
+                    <form id="appointmentForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Preferred Time</label>
+                            <select class="form-select" id="time" required>
+                                <option value="" selected disabled>Select a time</option>
+                                <option value="morning">Morning (9am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                                <option value="evening">Evening (4pm - 7pm)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service</label>
+                            <select class="form-select" id="service" required>
+                                <option value="" selected disabled>Select a service</option>
+                                <option value="individual">Individual Therapy</option>
+                                <option value="group">Group Therapy</option>
+                                <option value="cbt">Cognitive Behavioral Therapy</option>
+                                <option value="trauma">Trauma-Informed Care</option>
+                                <option value="mindfulness">Mindfulness Training</option>
+                                <option value="community">Community Integration</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Please share any specific concerns or questions"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 64px; height: 64px;">
+                            <i class="bi bi-check-lg fs-1"></i>
+                        </div>
+                    </div>
+                    <h3 class="fs-4 fw-bold mb-3">Appointment Request Received</h3>
+                    <p class="text-muted mb-4">
+                        Thank you for your request. Our team will contact you within 24 hours to confirm your
+                        appointment.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

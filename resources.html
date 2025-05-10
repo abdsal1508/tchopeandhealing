@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Wellness Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header (Same across all pages) -->
+    <header class="border-bottom sticky-top bg-white">
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2"
+                        style="width: 48px; height: 48px;">
+                        <img src="assets/images/placeholder.svg" alt="Wellness Center Logo" width="48" height="48">
+                    </div>
+                    <div class="fw-bold text-primary">
+                        <div class="fs-4">WELLNESS CENTER</div>
+                        <div class="small text-uppercase">MENTAL HEALTH SERVICES</div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">OUR TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">RESOURCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                                REQUEST APPOINTMENT
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold text-primary mb-3">Resources</h1>
+                    <p class="fs-5 text-muted">
+                        Helpful information, tools, and support for your mental health journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crisis Resources -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="alert alert-primary p-4 mb-4" role="alert">
+                        <h2 class="fs-4 fw-bold mb-3">Crisis Resources</h2>
+                        <p class="mb-3">If you or someone you know is experiencing a mental health crisis or having
+                            thoughts of suicide, please reach out for immediate help:</p>
+                        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-3">
+                            <a href="tel:988" class="btn btn-primary">
+                                <i class="bi bi-telephone-fill me-2"></i>988 Suicide & Crisis Lifeline
+                            </a>
+                            <a href="sms:741741" class="btn btn-outline-primary">
+                                <i class="bi bi-chat-text-fill me-2"></i>Text "HOME" to 741741
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-muted">
+                        The resources below are for informational purposes and should not replace professional medical
+                        advice, diagnosis, or treatment.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Self-Help Resources -->
+            <div class="mb-5">
+                <h2 class="display-6 fw-bold text-primary text-center mb-5">Self-Help Resources</h2>
+                <div class="row g-4">
+                    <!-- Resource 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body p-4">
+                                <div class="icon-circle mb-3">
+                                    <i class="bi bi-journal-text"></i>
+                                </div>
+                                <h3 class="fs-4 fw-bold text-primary mb-3">Anxiety Workbook</h3>
+                                <p class="text-muted mb-4">
+                                    A comprehensive workbook with exercises and techniques to help manage anxiety
+                                    symptoms and build coping skills.
+                                </p>
+                                <a href="#" class="btn btn-primary">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body p-4">
+                                <div class="icon-circle mb-3">
+                                    <i class="bi bi-headphones"></i>
+                                </div>
+                                <h3 class="fs-4 fw-bold text-primary mb-3">Guided Meditations</h3>
+                                <p class="text-muted mb-4">
+                                    A collection of guided meditations for stress reduction, sleep improvement, and
+                                    emotional regulation.
+                                </p>
+                                <a href="#" class="btn btn-primary">Access Meditations</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body p-4">
+                                <div class="icon-circle mb-3">
+                                    <i class="bi bi-calendar-check"></i>
+                                </div>
+                                <h3 class="fs-4 fw-bold text-primary mb-3">Mood Tracker</h3>
+                                <p class="text-muted mb-4">
+                                    A printable mood tracking tool to help you identify patterns and triggers in your
+                                    emotional well-being.
+                                </p>
+                                <a href="#" class="btn btn-primary">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Materials -->
+            <div class="mb-5">
+                <h2 class="display-6 fw-bold text-primary text-center mb-5">Educational Materials</h2>
+
+                <div class="accordion" id="educationalAccordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item border-0 shadow mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Understanding Depression
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#educationalAccordion">
+                            <div class="accordion-body">
+                                <p>Depression is more than just feeling sad. It's a common but serious mood disorder
+                                    that affects how you feel, think, and handle daily activities.</p>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Common Symptoms:</h4>
+                                <ul class="text-muted">
+                                    <li>Persistent sad, anxious, or "empty" mood</li>
+                                    <li>Feelings of hopelessness or pessimism</li>
+                                    <li>Loss of interest in hobbies and activities</li>
+                                    <li>Decreased energy or fatigue</li>
+                                    <li>Difficulty concentrating or making decisions</li>
+                                    <li>Changes in sleep patterns</li>
+                                    <li>Changes in appetite or weight</li>
+                                </ul>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Treatment Options:</h4>
+                                <p class="text-muted">Depression is highly treatable. Most people with depression feel
+                                    better with medication, psychotherapy, or a combination of the two. If you think you
+                                    may be experiencing depression, reach out to a mental health professional for an
+                                    evaluation.</p>
+                                <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item border-0 shadow mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Anxiety Disorders
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#educationalAccordion">
+                            <div class="accordion-body">
+                                <p>Anxiety disorders involve more than temporary worry or fear. For a person with an
+                                    anxiety disorder, the anxiety does not go away and can get worse over time.</p>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Common Types:</h4>
+                                <ul class="text-muted">
+                                    <li>Generalized Anxiety Disorder (GAD)</li>
+                                    <li>Panic Disorder</li>
+                                    <li>Social Anxiety Disorder</li>
+                                    <li>Specific Phobias</li>
+                                    <li>Obsessive-Compulsive Disorder (OCD)</li>
+                                    <li>Post-Traumatic Stress Disorder (PTSD)</li>
+                                </ul>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Treatment Options:</h4>
+                                <p class="text-muted">Anxiety disorders are highly treatable with psychotherapy,
+                                    medication, or both. Cognitive-behavioral therapy (CBT) is particularly effective
+                                    for many anxiety disorders.</p>
+                                <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item border-0 shadow mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Trauma and PTSD
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#educationalAccordion">
+                            <div class="accordion-body">
+                                <p>Trauma is an emotional response to a terrible event. Post-Traumatic Stress Disorder
+                                    (PTSD) can develop after experiencing or witnessing a traumatic event.</p>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Common Symptoms:</h4>
+                                <ul class="text-muted">
+                                    <li>Intrusive memories or flashbacks</li>
+                                    <li>Avoidance of trauma reminders</li>
+                                    <li>Negative changes in thinking and mood</li>
+                                    <li>Changes in physical and emotional reactions</li>
+                                    <li>Hypervigilance</li>
+                                    <li>Sleep disturbances</li>
+                                </ul>
+                                <h4 class="fs-5 fw-bold text-primary mt-4 mb-3">Treatment Options:</h4>
+                                <p class="text-muted">Effective treatments for trauma and PTSD include trauma-focused
+                                    psychotherapies such as Cognitive Processing Therapy (CPT), Prolonged Exposure (PE),
+                                    and Eye Movement Desensitization and Reprocessing (EMDR).</p>
+                                <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Resources -->
+            <div>
+                <h2 class="display-6 fw-bold text-primary text-center mb-5">Community Resources</h2>
+
+                <div class="row g-4">
+                    <!-- Resource 1 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body p-4">
+                                <h3 class="fs-4 fw-bold text-primary mb-3">Support Groups</h3>
+                                <p class="text-muted mb-4">
+                                    Connect with others who understand what you're going through. We offer various
+                                    support groups both at our center and in the community.
+                                </p>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Depression Support Group</h5>
+                                            <small>Tuesdays, 6-7:30 PM</small>
+                                        </div>
+                                        <p class="mb-1">A supportive environment for individuals experiencing
+                                            depression.</p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Anxiety Management Group</h5>
+                                            <small>Thursdays, 5-6:30 PM</small>
+                                        </div>
+                                        <p class="mb-1">Learn strategies to manage anxiety with others on a similar
+                                            journey.</p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Family Support Group</h5>
+                                            <small>1st & 3rd Saturdays, 10-11:30 AM</small>
+                                        </div>
+                                        <p class="mb-1">For family members of individuals with mental health challenges.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource 2 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow h-100">
+                            <div class="card-body p-4">
+                                <h3 class="fs-4 fw-bold text-primary mb-3">Local Resources</h3>
+                                <p class="text-muted mb-4">
+                                    Additional resources in the Minneapolis area that provide mental health support and
+                                    services.
+                                </p>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Minnesota Mental Health Helpline</h5>
+                                            <small><i class="bi bi-telephone"></i></small>
+                                        </div>
+                                        <p class="mb-1">24/7 helpline for mental health support and referrals.</p>
+                                        <small>(612) 555-4321</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Community Mental Health Center</h5>
+                                            <small><i class="bi bi-building"></i></small>
+                                        </div>
+                                        <p class="mb-1">Sliding scale services for those with financial need.</p>
+                                        <small>456 Community Ave, Minneapolis</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action resource-item">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">Recovery Alliance</h5>
+                                            <small><i class="bi bi-people"></i></small>
+                                        </div>
+                                        <p class="mb-1">Peer support for substance use recovery.</p>
+                                        <small>789 Recovery Blvd, St. Paul</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Reading -->
+    <section class="py-5 bg-primary-light">
+        <div class="container py-5">
+            <h2 class="display-5 fw-bold text-primary text-center mb-5">Recommended Reading</h2>
+
+            <div class="row g-4">
+                <!-- Book 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow h-100">
+                        <img src="assets/images/placeholder.svg" class="card-img-top" alt="Book cover">
+                        <div class="card-body p-4">
+                            <h3 class="fs-5 fw-bold text-primary mb-2">The Anxiety and Phobia Workbook</h3>
+                            <p class="text-muted mb-3">by Edmund J. Bourne, PhD</p>
+                            <p class="text-muted mb-4">
+                                A comprehensive resource for managing anxiety, panic, and fear.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow h-100">
+                        <img src="assets/images/placeholder.svg" class="card-img-top" alt="Book cover">
+                        <div class="card-body p-4">
+                            <h3 class="fs-5 fw-bold text-primary mb-2">Feeling Good: The New Mood Therapy</h3>
+                            <p class="text-muted mb-3">by David D. Burns, MD</p>
+                            <p class="text-muted mb-4">
+                                A classic guide to overcoming depression through cognitive techniques.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow h-100">
+                        <img src="assets/images/placeholder.svg" class="card-img-top" alt="Book cover">
+                        <div class="card-body p-4">
+                            <h3 class="fs-5 fw-bold text-primary mb-2">The Body Keeps the Score</h3>
+                            <p class="text-muted mb-3">by Bessel van der Kolk, MD</p>
+                            <p class="text-muted mb-4">
+                                Explores the effects of trauma and pathways to recovery.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow h-100">
+                        <img src="assets/images/placeholder.svg" class="card-img-top" alt="Book cover">
+                        <div class="card-body p-4">
+                            <h3 class="fs-5 fw-bold text-primary mb-2">Mindfulness for Beginners</h3>
+                            <p class="text-muted mb-3">by Jon Kabat-Zinn, PhD</p>
+                            <p class="text-muted mb-4">
+                                An introduction to mindfulness practices for stress reduction.
+                            </p>
+                            <a href="#" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same across all pages) -->
+    <footer class="py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Column 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="d-flex align-items-center mb-4 text-decoration-none">
+                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2"
+                            style="width: 40px; height: 40px;">
+                            <img src="assets/images/placeholder.svg" alt="Wellness Center Logo" width="40" height="40">
+                        </div>
+                        <div class="fw-bold text-white">
+                            <div>WELLNESS CENTER</div>
+                            <div class="small text-purple-400">MENTAL HEALTH SERVICES</div>
+                        </div>
+                    </a>
+                    <p class="mb-4">
+                        Providing compassionate mental health care to help you thrive in your daily life.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="staff.html">Our Team</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Services</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#individual-therapy">Individual Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#group-therapy">Group Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#cbt">Cognitive Behavioral Therapy</a></li>
+                        <li class="mb-2"><a href="services.html#trauma">Trauma-Informed Care</a></li>
+                        <li class="mb-2"><a href="services.html#mindfulness">Mindfulness Training</a></li>
+                        <li class="mb-2"><a href="services.html#community">Community Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fs-5 fw-bold text-white mb-4">Contact Us</h3>
+                    <address class="text-muted">
+                        <p class="mb-2">123 Wellness Avenue</p>
+                        <p class="mb-4">Minneapolis, MN 55401</p>
+                        <p class="mb-2">
+                            <span class="fw-semibold">Phone:</span> (612) 555-1234
+                        </p>
+                        <p class="mb-4">
+                            <span class="fw-semibold">Email:</span> info@wellnesscenter.com
+                        </p>
+                        <p class="mb-2">
+                            <span class="fw-semibold">Hours:</span>
+                        </p>
+                        <p class="mb-1">Monday - Friday: 8am - 7pm</p>
+                        <p>Saturday: 9am - 2pm</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-5 pt-4 text-center text-muted">
+                <p>&copy; 2025 Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal (Same across all pages) -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schedule an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Fill out the form below to request an appointment with one of our
+                        specialists.</p>
+                    <form id="appointmentForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label">Preferred Time</label>
+                            <select class="form-select" id="time" required>
+                                <option value="" selected disabled>Select a time</option>
+                                <option value="morning">Morning (9am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                                <option value="evening">Evening (4pm - 7pm)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service</label>
+                            <select class="form-select" id="service" required>
+                                <option value="" selected disabled>Select a service</option>
+                                <option value="individual">Individual Therapy</option>
+                                <option value="group">Group Therapy</option>
+                                <option value="cbt">Cognitive Behavioral Therapy</option>
+                                <option value="trauma">Trauma-Informed Care</option>
+                                <option value="mindfulness">Mindfulness Training</option>
+                                <option value="community">Community Integration</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Please share any specific concerns or questions"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 64px; height: 64px;">
+                            <i class="bi bi-check-lg fs-1"></i>
+                        </div>
+                    </div>
+                    <h3 class="fs-4 fw-bold mb-3">Appointment Request Received</h3>
+                    <p class="text-muted mb-4">
+                        Thank you for your request. Our team will contact you within 24 hours to confirm your
+                        appointment.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
