@@ -1,0 +1,378 @@
+:root {
+    --custom: #BD902B;
+    --custom-dark: #8e6d22;
+    --custom-light: #e9d9a8;
+    --custom-light-dark: #ccbe94;
+    --custom-lighter: #f5efd7;
+    --secondary: #f3f4f6;
+    --gray-dark: #111827;
+    --gray: #6b7280;
+    --gray-light: #f9fafb;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.company-name {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-custom {
+    color: var(--custom) !important;
+}
+
+.mini {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.text-custom-light {
+    color: var(--custom-light) !important;
+}
+
+.bg-custom {
+    background-color: var(--custom) !important;
+}
+
+.bg-custom-light {
+    background-color: var(--custom-lighter) !important;
+}
+
+.bg-light {
+    background-color: var(--gray-light) !important;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: var(--custom);
+    border-color: var(--custom);
+    color: white;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: var(--custom-dark);
+    border-color: var(--custom-dark);
+    color: white;
+}
+
+.btn-custom-light {
+    background-color: var(--custom-light);
+    border-color: var(--custom-light);
+    color: var(--gray-dark);
+}
+
+.btn-custom-light:hover,
+.btn-custom-light:focus {
+    background-color: var(--custom-light-dark);
+    border-color: var(--custom);
+    color: white;
+}
+
+.btn-outline-white {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #4b5563;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--custom);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(142, 109, 34, 0.8), rgba(189, 144, 43, 0.8));
+}
+
+/* Cards */
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--custom-lighter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--custom);
+}
+
+.icon-circle i {
+    font-size: 1.5rem;
+}
+
+.testimonial-card {
+    height: 100%;
+}
+
+.star-rating {
+    color: var(--custom);
+}
+
+/* Team Members */
+.team-img-container {
+    overflow: hidden;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.team-img-container img {
+    transition: transform 0.5s;
+}
+
+.team-card:hover .team-img-container img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer a,
+.bg-dark a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover,
+.bg-dark a:hover {
+    color: var(--custom-light);
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #9ca3af;
+    margin-right: 0.5rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--custom-light);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contact */
+.contact-info-card {
+    transition: transform 0.3s;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form elements */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--custom);
+    box-shadow: 0 0 0 0.25rem rgba(189, 144, 43, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    .navbar-brand .fs-6 {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand .fs-6 {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: 500px;
+    }
+
+    .navbar-brand {
+        max-width: 70%;
+    }
+
+    .navbar-brand .fs-6 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        height: 400px;
+    }
+
+    .navbar-brand {
+        max-width: 80%;
+    }
+
+    .navbar-brand .fs-6 {
+        font-size: 0.75rem !important;
+    }
+
+    .navbar-brand .d-flex {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .navbar-brand img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 399.98px) {
+    .navbar-brand {
+        max-width: 85%;
+    }
+
+    .navbar-brand .d-flex {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar-brand .fs-6 {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Additional responsive styles */
+@media (max-width: 767.98px) {
+
+    /* Fix for the hero section spacing */
+    .hero-section {
+        padding-top: 30px;
+    }
+
+    /* Add space between welcome text and navbar */
+    .text-custom-light.fw-medium.mb-2.fs-5 {
+        margin-top: 20px;
+    }
+
+    /* Make buttons stack properly on mobile */
+    .d-flex.flex-wrap.gap-3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Make buttons full width on mobile */
+    .d-flex.flex-wrap.gap-3 .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust hero text size for better mobile readability */
+    .hero-section h1.display-4 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p.fs-5 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+
+    /* Further adjustments for very small screens */
+    .hero-section {
+        height: auto !important;
+        min-height: 450px;
+        padding-bottom: 30px;
+    }
+
+    /* Ensure buttons are properly spaced and sized */
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* Fix for services section on small screens */
+    .service-card {
+        margin-bottom: 15px;
+    }
+
+    /* Improve spacing in testimonials on mobile */
+    .testimonial-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Fix for the CTA section buttons on mobile */
+@media (max-width: 767.98px) {
+    .bg-custom .d-flex.flex-wrap.justify-content-center.gap-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-custom .d-flex.flex-wrap.justify-content-center.gap-3 .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
