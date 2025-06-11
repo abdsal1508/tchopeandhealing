@@ -23,7 +23,7 @@
 
 <body>
     <!-- Header -->
-    <header class="border-bottom sticky-top bg-white shadow-lg">
+    <header class="border-bottom sticky-top bg-white">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -42,25 +42,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                            <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="about.html">ABOUT US</a>
                         </li>
-<!--                         <li class="nav-item">
-                            <a class="nav-link" href="#">OUR TEAM</a>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="staff.html">OUR TEAM</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="services.html">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">RESOURCES</a>
+                            <a class="nav-link" href="resources.html">RESOURCES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                             <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#appointmentModal">
@@ -73,34 +73,37 @@
         </div>
     </header>
 
-<!-- Hero Section -->
-<section class="hero-section" style="background-image: url('assets/images/hero-bg.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="container position-relative">
-        <div class="row align-items-center py-5">
-            <div class="col-lg-6 position-relative" style="z-index: 1;">
-                    <div class="text-custom-light fw-medium mb-2 fs-1">Welcome To
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6 position-relative" style="z-index: 1;">
+                    <div class="text-custom fw-medium mb-2 fs-1">Welcome to
+
                     </div>
-                    <h1 class="display-4 fw-bold text-white mb-4">Twin cities hope and healing center LLC</h1>
+                    <h1 class="display-4 fw-bold text-white mb-4">Twin Cities Hope and Healing Center LLC</h1>
                     <p class="text-white fs-5 mb-5">
                         Serving the Communities of Ramsey, Hennepin, Anoka, and Wright Counties in Minnesota
                     </p>
                     <div class="d-flex flex-wrap gap-3">
-                        <button class="btn btn-custom-light btn-lg fw-semibold" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                        <button class="btn btn-custom btn-lg fw-semibold" data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal">
                             FIX AN APPOINMENT
                         </button>
+                        <!-- <a href="#" class="btn btn-custom-light btn-lg fw-semibold">FIX AN APPOINMENT</a> -->
                         <a href="#" class="btn btn-outline-white btn-lg fw-semibold">LEARN MORE</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Services Overview -->
     <section class="py-5 bg-light">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-custom mb-3">How We Can Help</h2>
+                <h2 class="display-5 fw-bold text-custom-dark mb-3">How We Can Help</h2>
                 <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
                     Our comprehensive approach offers various therapeutic methods tailored to your individual needs.
                 </p>
@@ -110,15 +113,17 @@
                 <!-- Service Card 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow service-card">
-                        <div class="card-body p-4">
-                            <div class="icon-circle">
-                                <i class="bi bi-brain"></i>
+                        <div class="card-body p-0">
+                            <div class="p-0 service-image">
+                                <img src="assets/images/s-1.png" alt="" width="" class="">
                             </div>
-                            <h3 class="fs-4 fw-bold text-custom mb-3">Therapy Approach 1</h3>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod,
-                                nisl vel ultricies lacinia, nisl nisl aliquam nisl.
-                            </p>
+                            <div class="p-4">
+                                <h3 class="fs-4 fw-bold text-custom-dark mb-3">Mitigating Relapse Risk</h3>
+                                <p class="text-secondary">
+                                    We provide individuals with strategies to recognize and manage early signs of
+                                    distress, reducing the risk of setbacks.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,39 +131,43 @@
                 <!-- Service Card 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow service-card">
-                        <div class="card-body p-4">
-                            <div class="icon-circle">
-                                <i class="bi bi-heart"></i>
+                        <div class="card-body p-0">
+                            <div class="p-0 service-image">
+                                <img src="assets/images/s-2.png" alt="" width="" class="">
                             </div>
-                            <h3 class="fs-4 fw-bold text-custom mb-3">Therapy Approach 2</h3>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod,
-                                nisl vel ultricies lacinia, nisl nisl aliquam nisl.
-                            </p>
+                            <div class="p-4">
+                                <h3 class="fs-4 fw-bold text-custom-dark mb-3">Managing Stress Effectively</h3>
+                                <p class="text-secondary">
+                                    We provide individuals with practical tools to effectively manage stress, enhancing
+                                    their overall well-being.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service Card 3 -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow service-card">
-                        <div class="card-body p-4">
-                            <div class="icon-circle">
-                                <i class="bi bi-people"></i>
+                    <div class="card h-100 border-0 shadow service-card ">
+                        <div class="card-body p-0">
+                            <div class="p-0 service-image">
+                                <img src="assets/images/s-3.png" alt="" width="" class="">
                             </div>
-                            <h3 class="fs-4 fw-bold text-custom mb-3">Therapy Approach 3</h3>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod,
-                                nisl vel ultricies lacinia, nisl nisl aliquam nisl.
-                            </p>
+                            <div class="p-4">
+                                <h3 class="fs-4 fw-bold text-custom-dark mb-3">Creating Healthy Coping Strategies</h3>
+                                <p class="text-secondary">
+                                    We guide individuals in adopting healthy strategies to manage ongoing mental health
+                                    symptoms, fostering resilience and well-being.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            <div class="text-center mt-5">
-                <a href="#" class="btn btn-custom btn-lg">View All Services</a>
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-custom btn-lg">View All Services</a>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- About Section -->
@@ -172,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold text-custom mb-4">Our Approach</h2>
+                    <h2 class="display-5 fw-bold text-custom-dark mb-4">Our Approach</h2>
                     <p class="fs-5 text-muted mb-4">
                         At Twin Cities Hope and Healing, we believe in treating the whole person. Our holistic approach
                         considers your unique background, experiences, and goals to create a personalized treatment
@@ -192,7 +201,7 @@
     <section class="py-5 bg-custom-light">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-custom mb-3">Client Stories</h2>
+                <h2 class="display-5 fw-bold text-custom-dark mb-3">Client Stories</h2>
                 <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
                     Hear from individuals who have experienced positive changes through our services.
                 </p>
@@ -275,43 +284,43 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 bg-custom text-white">
+    <section class="py-3  bg-light text-dark">
         <div class="container py-5 text-center">
-            <h2 class="display-5 fw-bold mb-4">Ready to Start Your Journey?</h2>
-            <p class="fs-5 mb-5 mx-auto" style="max-width: 700px;">
-                Take the first step toward better mental health today. Our team is here to support you every step of the
-                way.
+            <h2 class="display-5 text-custom-dark fw-bold mb-3">Make An Appointment <span class="text-line">Today</span>
+            </h2>
+            <p class="fs-6 mb-3 px-5 lh-base mx-auto text-secondary" style="width: 1000px;">
+                At our facility, we offer a supportive and welcoming environment for your Twin cities hope & healing
+                center LLC appointments. We recognize that seeking help can be challenging, so we are dedicated to
+                creating a comfortable, judgment-free space. Our focus is to provide you with the knowledge and tools
+                necessary for your success. During your appointments, our compassionate Twin cities hope & healing
+                center LLC team is here to listen, answer your questions, and address any concerns you may have. We are
+                committed to partnering with you on your journey toward enhanced mental health and overall well-being.
             </p>
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <button class="btn btn-custom-light btn-lg fw-semibold" data-bs-toggle="modal"
+            <div class="">
+                <button class="btn btn-custom btn-lg d-inline fw-semibold" data-bs-toggle="modal"
                     data-bs-target="#appointmentModal">
                     REQUEST APPOINTMENT
                 </button>
-                <a href="#" class="btn btn-outline-light btn-lg">Contact Us</a>
+                <a href="#" class="mx-3 btn btn-lg shadow" style="background-color: white;">Contact Us</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <section class="py-5 bg-dark">
+    <section class="pt-5 footer">
         <div class="container py-5">
-            <div class="row g-4">
+            <div class="row flex justify-content-between">
                 <!-- Column 1 -->
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
-                        <div class=" d-flex align-items-center justify-content-center me-2"
-                            style="width: 40px; height: 40px;">
-                            <img src="assets/images/logo.svg" alt="Twin Cities Hope and Healing Logo" width="40"
-                                height="40">
-                        </div>
-                        <div class="fw-bold text-white company-name">
-                            <div>Twin Cities Hope and Healing</div>
-                            <div class="small text-custom-light">CENTER LLC</div>
+                        <div class=" d-flex align-items-center justify-content-center me-2">
+                            <img src="assets/images/footer.png" alt="Twin Cities Hope and Healing Logo" width="350"
+                                height="">
                         </div>
                     </a>
-                    <p class="mb-4 text-light">
-                        Dedicated to providing compassionate, evidence-based CENTER LLC to help you thrive.
-                    </p>
+                    <p class="mb-4">
+                        Twin cities hope and healing center LLC, we are committed to fostering hope and improving mental
+                        health. </p>
                     <div class="d-flex gap-2">
                         <a href="#" class="social-icon">
                             <i class="bi bi-facebook"></i>
@@ -342,7 +351,7 @@
                 </div>
 
                 <!-- Column 3 -->
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <h3 class="fs-5 fw-bold text-white mb-4">Services</h3>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#">Therapy Approach 1</a></li>
@@ -352,14 +361,14 @@
                         <li class="mb-2"><a href="#">Therapy Approach 5</a></li>
                         <li class="mb-2"><a href="#">Therapy Approach 6</a></li>
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- Column 4 -->
                 <div class="col-lg-3 col-md-6">
                     <h3 class="fs-5 fw-bold text-white mb-4">Contact Us</h3>
                     <address class="text-light">
-                        <p class="mb-2">4124 Quebec Ave N #304,</p>
-                        <p class="mb-4">New Hope, MN 55427</p>
+                        <p class="mb-2">123 Wellness Avenue</p>
+                        <p class="mb-4">Minneapolis, MN 55401</p>
                         <p class="mb-2">
                             <span class="fw-semibold">Phone:</span> (612) 555-1234
                         </p>
@@ -367,7 +376,7 @@
                             <span class="fw-semibold">Email:</span> info@twincitieshopeandhealing.com
                         </p>
                         <p class="mb-2">
-                            <span class="fw-semibold">Hours:</span>
+                            <span class="fw-semibold">Hours:</span><i class="fa-regular fa-clock"></i>
                         </p>
                         <p class="mb-1">Monday - Friday: 8am - 7pm</p>
                         <p>Saturday: 9am - 2pm</p>
@@ -376,7 +385,7 @@
             </div>
 
             <div class="border-top border-secondary mt-5 pt-4 text-center text-light">
-                <p>&copy; 2025 Twin Cities Hope and Healing. All rights reserved.</p>
+                <p class="m-0">&copy; 2025 Twin Cities Hope and Healing. All rights reserved.</p>
             </div>
         </div>
     </section>
@@ -424,7 +433,7 @@
                                 <option value="evening">Evening (4pm - 7pm)</option>
                             </select>
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="service" class="form-label">Service</label>
                             <select class="form-select" id="service" name="service" required>
                                 <option value="" selected disabled>Select a service</option>
@@ -435,7 +444,7 @@
                                 <option value="approach5">Therapy Approach 5</option>
                                 <option value="approach6">Therapy Approach 6</option>
                             </select>
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Additional Information</label>
                             <textarea class="form-control" id="message" name="message" rows="3"
