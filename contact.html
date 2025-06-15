@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
-    <title>Twin Cities Hope and Healing | CENTER LLC</title>
+    <title>Contact Us | Twin Cities Hope and Healing Center LLC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,14 +15,13 @@
 </head>
 
 <body>
-    <!-- Header (Same across all pages) -->
-    <header class="border-bottom sticky-top bg-white shadow-lg">
+    <!-- Header -->
+    <header class="border-bottom sticky-top bg-white">
         <div class="container">
-                        <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <div class="d-flex align-items-center justify-content-center" style="width: 90px; height: 90px;">
-                        <img src="assets/images/logo.svg" alt="Twin Cities Hope and Healing Logo" width="90"
-                            height="90">
+                        <img src="assets/images/logo.svg" alt="Twin Cities Hope and Healing Logo" width="90" height="90">
                     </div>
                     <div class="fw-bold">
                         <div class="fs-6 company-name">Twin cities hope and <br> healing</div>
@@ -38,22 +37,13 @@
                             <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-<!--                         <li class="nav-item">
-                            <a class="nav-link" href="#">OUR TEAM</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">RESOURCES</a>
+                            <a class="nav-link" href="services.html">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link active" href="contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                             <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#appointmentModal">
@@ -71,197 +61,105 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h1 class="display-4 fw-bold text-custom mb-3">Contact Us</h1>
+                    <h1 class="display-4 fw-bold text-custom-dark mb-3">Contact Us</h1>
                     <p class="fs-5 text-muted">
-                        We're here to help. Reach out to us with any questions or to schedule an appointment.
+                        Get in touch with our team to learn more about our services or schedule an appointment
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="py-5">
-        <div class="container py-5 shadow-lg border rounded-2">
-            <div class="row g-5 ">
-                <!-- Contact Form -->
-                <div class="col-lg-7 ">
-                    <h2 class="fs-1 fw-bold text-custom mb-4">Get in Touch</h2>
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                            <div class="invalid-feedback">
-                                Please provide your name.
-                            </div>
+    <!-- Contact Information -->
+    <section class="contact-info-section py-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="display-5 fw-bold text-custom-dark mb-3">Contact Us</h2>
+                            <address class="text-dark mb-4">
+                                <div class="mb-2"><span class="fw-semibold">Address:</span><br>4124 Quebec ave suite 304<br>New Hope, MN 55427, USA</div>
+                                <div class="mb-2"><span class="fw-semibold">Phone:</span> <a href="tel:6125980275" class="text-decoration-none text-dark">612-598-0275</a></div>
+                                <div class="mb-2"><span class="fw-semibold">Email:</span> <a href="mailto:admin@tchopeandhealing.life" class="text-decoration-none text-dark">admin@tchopeandhealing.life</a></div>
+                                <div class="mb-2"><span class="fw-semibold">Hours:</span></div>
+                                <div class="mb-1">Monday - Friday: 8am - 7pm</div>
+                                <div>Saturday: 9am - 2pm</div>
+                            </address>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                            <div class="invalid-feedback">
-                                Please provide a valid email address.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone (optional)</label>
-                            <input type="tel" class="form-control" id="phone">
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject" required>
-                            <div class="invalid-feedback">
-                                Please provide a subject.
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" required></textarea>
-                            <div class="invalid-feedback">
-                                Please provide a message.
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-                    </form>
-                    <div id="contactConfirmation" class="mt-4 p-4 bg-success-subtle rounded-3 d-none">
-                        <div class="d-flex">
-                            <div class="me-3">
-                                <i class="bi bi-check-circle-fill text-success fs-1"></i>
-                            </div>
-                            <div>
-                                <h3 class="fs-4 fw-bold mb-2">Message Sent Successfully</h3>
-                                <p class="mb-0">Thank you for reaching out. We'll get back to you as soon as possible.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Information -->
-                <div class="col-lg-5">
-                    <div class="bg-primary-light p-4 p-lg-5 rounded-3 h-100">
-                        <h2 class="fs-1 fw-bold text-custom mb-4">Contact Information</h2>
-
-                        <div class="d-flex mb-4">
-                            <div class="me-3">
-                                <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="bi bi-geo-alt fs-4 text-primary"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="fs-5 fw-bold text-custom mb-2">Address</h3>
-                                <p class="text-muted mb-0">4124 Quebec Ave N #304,<br>New Hope, MN 554271</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-4">
-                            <div class="me-3">
-                                <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="bi bi-telephone fs-4 text-primary"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="fs-5 fw-bold text-custom mb-2">Phone</h3>
-                                <p class="text-muted mb-1">Main: (612) 555-1234</p>
-                                <p class="text-muted mb-1">Fax: (612) 555-5678</p>
-                                <p class="text-muted mb-0">Crisis Line: (612) 555-9999</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-4">
-                            <div class="me-3">
-                                <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="bi bi-envelope fs-4 text-primary"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="fs-5 fw-bold text-custom mb-2">Email</h3>
-                                <p class="text-muted mb-1">General: info@wellnesscenter.com</p>
-                                <p class="text-muted mb-1">Appointments: appointments@wellnesscenter.com</p>
-                                <p class="text-muted mb-0">Support: support@wellnesscenter.com</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-4">
-                            <div class="me-3">
-                                <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                    style="width: 48px; height: 48px;">
-                                    <i class="bi bi-clock fs-4 text-primary"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="fs-5 fw-bold text-custom mb-2">Hours</h3>
-                                <p class="text-muted mb-1">Monday - Friday: 8am - 7pm</p>
-                                <p class="text-muted mb-1">Saturday: 9am - 2pm</p>
-                                <p class="text-muted mb-0">Sunday: Closed</p>
-                            </div>
-                        </div>
-
-                        <div class="mt-5">
-                            <h3 class="fs-5 fw-bold text-custom mb-3">Follow Us</h3>
+                        <div class="mt-4">
+                            <h4 class="fs-6 fw-bold text-custom-dark mb-3">Follow Us</h4>
                             <div class="d-flex gap-3">
-                                <a href="#" class="social-link">
-                                    <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                        style="width: 40px; height: 40px;">
-                                        <i class="bi bi-facebook fs-5 text-primary"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="social-link">
-                                    <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                        style="width: 40px; height: 40px;">
-                                        <i class="bi bi-twitter-x fs-5 text-primary"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="social-link">
-                                    <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                        style="width: 40px; height: 40px;">
-                                        <i class="bi bi-instagram fs-5 text-primary"></i>
-                                    </div>
-                                </a>
-                                <a href="#" class="social-link">
-                                    <div class="rounded-circle bg-white d-flex align-items-center justify-content-center"
-                                        style="width: 40px; height: 40px;">
-                                        <i class="bi bi-linkedin fs-5 text-primary"></i>
-                                    </div>
-                                </a>
+                                <a href="https://facebook.com/" target="_blank" class="text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+                                <a href="https://wa.me/" target="_blank" class="text-decoration-none" aria-label="WhatsApp"><i class="bi bi-whatsapp fs-4"></i></a>
+                                <a href="https://twitter.com/" target="_blank" class="text-decoration-none" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white rounded-4 shadow-sm p-4 h-100">
+                        <h3 class="fs-5 fw-bold text-custom-dark mb-4">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-dark">Full Name</label>
+                                <input type="text" class="form-control text-dark" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-dark">Email</label>
+                                <input type="email" class="form-control text-dark" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-dark">Phone</label>
+                                <input type="tel" class="form-control text-dark" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-dark">Message</label>
+                                <textarea class="form-control text-dark" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="ratio ratio-21x9 rounded overflow-hidden shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.624699002663!2d-93.37867552374944!3d45.03254357107022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3369a59ce10bb%3A0xcb1a08dca8215ff3!2s4124%20Quebec%20Ave%20N%20%23304%2C%20New%20Hope%2C%20MN%2055427%2C%20USA!5e0!3m2!1sen!2sin!4v1750000102986!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="py-5 bg-gray-light">
+    <!-- Map Section
+    <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="fs-1 fw-bold text-custom mb-4 text-center">Find Us</h2>
-            <div class="ratio ratio-21x9 rounded-3 overflow-hidden shadow-sm">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.624512225641!2d-93.37867552426502!3d45.03254736213634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3369a59ce10bb%3A0xcb1a08dca8215ff3!2s4124%20Quebec%20Ave%20N%20%23304%2C%20New%20Hope%2C%20MN%2055427!5e0!3m2!1sen!2sus!4v1749614544858!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ratio ratio-21x9 rounded overflow-hidden shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.624699002663!2d-93.37867552374944!3d45.03254357107022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3369a59ce10bb%3A0xcb1a08dca8215ff3!2s4124%20Quebec%20Ave%20N%20%23304%2C%20New%20Hope%2C%20MN%2055427%2C%20USA!5e0!3m2!1sen!2sin!4v1750000102986!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-<!-- Footer -->
+    <!-- Footer -->
     <section class="pt-5 footer">
         <div class="container py-5">
             <div class="row flex justify-content-between">
                 <!-- Column 1 -->
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
-                        <div class=" d-flex align-items-center justify-content-center me-2">
-                            <img src="assets/images/footer.png" alt="Twin Cities Hope and Healing Logo" width="350"
-                                height="">
+                        <div class="d-flex align-items-center justify-content-center me-2">
+                            <img src="assets/images/footer.png" alt="Twin Cities Hope and Healing Logo" width="350" height="">
                         </div>
                     </a>
                     <p class="mb-4">
-                        Twin cities hope and healing center LLC, we are committed to fostering hope and improving mental
-                        health. </p>
+                        Twin cities hope and healing center LLC, we are committed to fostering hope and improving mental health.
+                    </p>
                     <div class="d-flex gap-2">
                         <a href="#" class="social-icon">
                             <i class="bi bi-facebook"></i>
@@ -291,25 +189,12 @@
                     </ul>
                 </div>
 
-                <!-- Column 3 -->
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h3 class="fs-5 fw-bold text-white mb-4">Services</h3>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Therapy Approach 1</a></li>
-                        <li class="mb-2"><a href="#">Therapy Approach 2</a></li>
-                        <li class="mb-2"><a href="#">Therapy Approach 3</a></li>
-                        <li class="mb-2"><a href="#">Therapy Approach 4</a></li>
-                        <li class="mb-2"><a href="#">Therapy Approach 5</a></li>
-                        <li class="mb-2"><a href="#">Therapy Approach 6</a></li>
-                    </ul>
-                </div> -->
-
                 <!-- Column 4 -->
                 <div class="col-lg-3 col-md-6">
                     <h3 class="fs-5 fw-bold text-white mb-4">Contact Us</h3>
                     <address class="text-light">
-                        <p class="mb-2">123 Wellness Avenue</p>
-                        <p class="mb-4">Minneapolis, MN 55401</p>
+                        <p class="mb-2">4124 Quebec ave suite 304</p>
+                        <p class="mb-4">New Hope, MN 55427, USA</p>
                         <p class="mb-2">
                             <span class="fw-semibold">Phone:</span> 612-598-0275
                         </p>
@@ -319,9 +204,8 @@
                         <p class="mb-2">
                             <span class="fw-semibold">Hours:</span><i class="fa-regular fa-clock"></i>
                         </p>
-                        <p class="mb-1">Monday - Friday: 8am - 6pm</p>
+                        <p class="mb-1">Monday - Friday: 8am - 7pm</p>
                         <p>Saturday: 9am - 2pm</p>
-                        <p>Sunday: closed</p>
                     </address>
                 </div>
             </div>
@@ -332,130 +216,210 @@
         </div>
     </section>
 
-    <!-- Appointment Modal (Same across all pages) -->
-    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Schedule an Appointment</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title">Request an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p class="text-muted mb-4">Fill out the form below to request an appointment with one of our
-                        specialists.</p>
-                    <form id="appointmentForm">
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" required>
-                            </div>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="date" class="form-label">Preferred Date</label>
-                            <input type="date" class="form-control" id="date" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="time" class="form-label">Preferred Time</label>
-                            <select class="form-select" id="time" required>
-                                <option value="" selected disabled>Select a time</option>
-                                <option value="morning">Morning (9am - 12pm)</option>
-                                <option value="afternoon">Afternoon (12pm - 4pm)</option>
-                                <option value="evening">Evening (4pm - 7pm)</option>
+                            <label class="form-label">Preferred Service</label>
+                            <select class="form-select">
+                                <option>Basic Living and Social Skills Training</option>
+                                <option>Certified Peer Specialist Services</option>
+                                <option>Functional & Diagnostic Assessments</option>
+                                <option>Individual Therapy</option>
+                                <option>Group Therapy</option>
+                                <option>Family Therapy</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="service" class="form-label">Service</label>
-                            <select class="form-select" id="service" required>
-                                <option value="" selected disabled>Select a service</option>
-                                <option value="individual">Individual Therapy</option>
-                                <option value="group">Group Therapy</option>
-                                <option value="cbt">Cognitive Behavioral Therapy</option>
-                                <option value="trauma">Trauma-Informed Care</option>
-                                <option value="mindfulness">Mindfulness Training</option>
-                                <option value="community">Community Integration</option>
-                            </select>
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Additional Information</label>
-                            <textarea class="form-control" id="message" rows="3"
-                                placeholder="Please share any specific concerns or questions"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                        <button type="submit" class="btn btn-custom w-100">Submit Request</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Success Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body text-center p-5">
-                    <div class="d-flex justify-content-center mb-4">
-                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 64px; height: 64px;">
-                            <i class="bi bi-check-lg fs-1"></i>
-                        </div>
-                    </div>
-                    <h3 class="fs-4 fw-bold mb-3">Appointment Request Received</h3>
-                    <p class="text-muted mb-4">
-                        Thank you for your request. Our team will contact you within 24 hours to confirm your
-                        appointment.
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        // Contact form validation and submission
-        document.addEventListener('DOMContentLoaded', function () {
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function (e) {
-                    e.preventDefault();
-
-                    // Form validation
-                    if (!this.checkValidity()) {
-                        e.stopPropagation();
-                        this.classList.add('was-validated');
-                        return;
-                    }
-
-                    // In a real application, you would send the form data to your server here
-                    console.log('Contact form submitted');
-
-                    // Show success message
-                    const contactConfirmation = document.getElementById('contactConfirmation');
-                    if (contactConfirmation) {
-                        contactConfirmation.classList.remove('d-none');
-                        // Scroll to the confirmation message
-                        contactConfirmation.scrollIntoView({ behavior: 'smooth' });
-                    }
-
-                    // Reset the form
-                    this.reset();
-                    this.classList.remove('was-validated');
-                });
-            }
+        AOS.init({
+            duration: 900,
+            once: false,
+            easing: 'ease-in-out',
         });
     </script>
+    <script type="module">
+        import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js';
+        // Scene setup
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf0f8ff);
+        // Camera setup
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 30;
+        // Renderer setup
+        const renderer = new THREE.WebGLRenderer({
+            preserveDrawingBuffer: true,
+            antialias: true,
+            alpha: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.domElement.style.position = 'fixed';
+        renderer.domElement.style.top = '0';
+        renderer.domElement.style.left = '0';
+        renderer.domElement.style.zIndex = '-1';
+        document.body.appendChild(renderer.domElement);
+        // Light setup
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambientLight);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(0, 10, 10);
+        scene.add(directionalLight);
+        // Create particles
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particleCount = 2000;
+        const posArray = new Float32Array(particleCount * 3);
+        const colorsArray = new Float32Array(particleCount * 3);
+        for (let i = 0; i < particleCount * 3; i += 3) {
+            posArray[i] = (Math.random() - 0.5) * 100;
+            posArray[i + 1] = (Math.random() - 0.5) * 100;
+            posArray[i + 2] = (Math.random() - 0.5) * 100;
+            colorsArray[i] = 0.3 + Math.random() * 0.2;
+            colorsArray[i + 1] = 0.7 + Math.random() * 0.3;
+            colorsArray[i + 2] = 0.8 + Math.random() * 0.2;
+        }
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colorsArray, 3));
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.2,
+            transparent: true,
+            opacity: 0.6,
+            vertexColors: true,
+            sizeAttenuation: true
+        });
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+        // Create flowing waves
+        const waveGeometry = new THREE.PlaneGeometry(100, 100, 50, 50);
+        const waveMaterial = new THREE.MeshStandardMaterial({
+            color: 0x50b8a8,
+            side: THREE.DoubleSide,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.2
+        });
+        const wave = new THREE.Mesh(waveGeometry, waveMaterial);
+        wave.rotation.x = Math.PI / 2;
+        wave.position.y = -10;
+        scene.add(wave);
+        const wavePositionAttribute = waveGeometry.attributes.position;
+        // Add floating orbs
+        const orbs = [];
+        const orbColors = [0x2a7d8c, 0x50b8a8, 0x88d4ab, 0xa8e6cf];
+        for (let i = 0; i < 10; i++) {
+            const size = Math.random() * 1.5 + 0.5;
+            const geometry = new THREE.SphereGeometry(size, 32, 32);
+            const material = new THREE.MeshPhongMaterial({
+                color: orbColors[Math.floor(Math.random() * orbColors.length)],
+                transparent: true,
+                opacity: 0.7,
+                emissive: 0x222222
+            });
+            const orb = new THREE.Mesh(geometry, material);
+            orb.position.set(
+                (Math.random() - 0.5) * 60,
+                (Math.random() - 0.5) * 40,
+                (Math.random() - 0.5) * 40
+            );
+            orb.userData = {
+                speedX: (Math.random() - 0.5) * 0.05,
+                speedY: (Math.random() - 0.5) * 0.05,
+                speedZ: (Math.random() - 0.5) * 0.05
+            };
+            scene.add(orb);
+            orbs.push(orb);
+        }
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        // Mouse interaction
+        let mouseX = 0;
+        let mouseY = 0;
+        const mouseSensitivity = 0.0005;
+        document.addEventListener('mousemove', (event) => {
+            mouseX = (event.clientX - window.innerWidth / 2);
+            mouseY = (event.clientY - window.innerHeight / 2);
+        });
+        document.addEventListener('touchmove', (event) => {
+            if (event.touches.length > 0) {
+                mouseX = (event.touches[0].clientX - window.innerWidth / 2);
+                mouseY = (event.touches[0].clientY - window.innerHeight / 2);
+                event.preventDefault();
+            }
+        }, { passive: false });
+        // Animation loop
+        const clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate);
+            try {
+                const elapsedTime = clock.getElapsedTime();
+                particlesMesh.rotation.x += 0.0005;
+                particlesMesh.rotation.y += 0.0005;
+                for (let i = 0; i < wavePositionAttribute.count; i++) {
+                    const x = wavePositionAttribute.getX(i);
+                    const z = wavePositionAttribute.getZ(i);
+                    const y = Math.sin(x * 0.1 + elapsedTime) * Math.cos(z * 0.1 + elapsedTime) * 2;
+                    wavePositionAttribute.setY(i, y);
+                }
+                wavePositionAttribute.needsUpdate = true;
+                orbs.forEach(orb => {
+                    orb.position.x += orb.userData.speedX;
+                    orb.position.y += orb.userData.speedY;
+                    orb.position.z += orb.userData.speedZ;
+                    if (Math.abs(orb.position.x) > 40) orb.userData.speedX *= -1;
+                    if (Math.abs(orb.position.y) > 30) orb.userData.speedY *= -1;
+                    if (Math.abs(orb.position.z) > 30) orb.userData.speedZ *= -1;
+                    orb.scale.set(
+                        1 + Math.sin(elapsedTime * 2) * 0.1,
+                        1 + Math.sin(elapsedTime * 2) * 0.1,
+                        1 + Math.sin(elapsedTime * 2) * 0.1
+                    );
+                });
+                camera.position.x += (mouseX * mouseSensitivity - camera.position.x) * 0.05;
+                camera.position.y += (-mouseY * mouseSensitivity - camera.position.y) * 0.05;
+                camera.lookAt(scene.position);
+                renderer.render(scene, camera);
+            } catch (error) {
+                console.error("Animation error:", error);
+            }
+        }
+        animate();
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
