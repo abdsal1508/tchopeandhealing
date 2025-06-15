@@ -181,7 +181,7 @@ h6 {
     transition: transform 0.3s;
 }
 .service-image img:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .icon-circle {
     width: 64px;
@@ -417,4 +417,114 @@ p {
         width: 100%;
         margin-bottom: 10px;
     }
+}
+
+/* Card Hover Effects */
+.hover-card {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hover-card .card-body {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover .card-body {
+    background-color: var(--custom-light);
+}
+
+.hover-card .icon-circle {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover .icon-circle {
+    transform: scale(1.1);
+    background-color: var(--custom);
+}
+
+.hover-card:hover .icon-circle i {
+    color: white;
+}
+
+.hover-card h3 {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover h3 {
+    color: var(--custom) !important;
+}
+
+.hover-card p,
+.hover-card li {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-card:hover p,
+.hover-card:hover li {
+    color: var(--custom-dark) !important;
+}
+
+/* Icon Circle Animation */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--custom-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-circle i {
+    font-size: 1.5rem;
+    color: var(--custom);
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadein-left {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadein-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadein-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadein-left {
+  opacity: 0;
+  animation: fadein-left 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+.animate-fadein-right {
+  opacity: 0;
+  animation: fadein-right 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+.animate-fadein-up {
+  opacity: 0;
+  animation: fadein-up 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+/* Animation delay for cards */
+.animate-fadein-up {
+  animation-delay: 0.1s;
+}
+
+/* Modern card tweaks */
+.hover-card {
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.hover-card .card-body {
+  border-radius: 1.25rem;
 }
