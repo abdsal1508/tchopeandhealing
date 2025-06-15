@@ -20,7 +20,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <div class="d-flex align-items-center justify-content-center service-image" style="width: 90px; height: 90px;">
+                    <div class="d-flex align-items-center justify-content-center" style="width: 90px; height: 90px;">
                         <img src="assets/images/logo.svg" alt="Twin Cities Hope and Healing Logo" width="90" height="90">
                     </div>
                     <div class="fw-bold">
@@ -157,7 +157,7 @@
                 <!-- Column 1 -->
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="d-flex align-items-center mb-4 text-decoration-none">
-                        <div class="d-flex align-items-center justify-content-center me-2 service-image">
+                        <div class="d-flex align-items-center justify-content-center me-2">
                             <img src="assets/images/footer.png" alt="Twin Cities Hope and Healing Logo" width="350" height="">
                         </div>
                     </a>
@@ -294,6 +294,7 @@
         renderer.domElement.style.top = '0';
         renderer.domElement.style.left = '0';
         renderer.domElement.style.zIndex = '-1';
+        renderer.domElement.style.pointerEvents = 'none';
         document.body.appendChild(renderer.domElement);
         // Light setup
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
