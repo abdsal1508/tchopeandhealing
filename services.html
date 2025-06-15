@@ -384,9 +384,8 @@
             if (event.touches.length > 0) {
                 mouseX = (event.touches[0].clientX - window.innerWidth / 2);
                 mouseY = (event.touches[0].clientY - window.innerHeight / 2);
-                event.preventDefault();
             }
-        }, { passive: false });
+        }, { passive: true });
         // Animation loop
         const clock = new THREE.Clock();
         function animate() {
